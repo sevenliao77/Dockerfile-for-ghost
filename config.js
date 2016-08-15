@@ -11,7 +11,7 @@ config = {
     // When running Ghost in the wild, use the production environment.
     // Configure your URL and mail settings here
     production: {
-        url: 'https://改成你要的前缀.daoapp.io/',
+        url: 'https://hypermeteor.daoapp.io/',
         mail: {},
         database: {
             client: 'sqlite3',
@@ -31,7 +31,7 @@ config = {
     development: {
         // The url to use when providing links to the site, E.g. in RSS and email.
         // Change this to your Ghost blog's published URL.
-        url: 'https://改成你要的前缀.daoapp.io/',
+        url: 'https:///hypermeteor.daoapp.io/',
 
         // Example refferer policy
         // Visit https://www.w3.org/TR/referrer-policy/ for instructions
