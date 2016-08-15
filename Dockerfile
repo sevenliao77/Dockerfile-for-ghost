@@ -1,6 +1,6 @@
 # https://hjl.daoapp.io/
 # 作者hjl~
-# 本文件不需要修改
+# 如果要添加主题，请修改本文件，修改后请将添加主题命令以及上一行前面的#号删除
 # 下面是机读部分
 FROM node:4-slim
 RUN groupadd user && useradd --create-home --home-dir /home/user -g user user
@@ -40,9 +40,8 @@ RUN npm install --production \
 	&& rm -rf /tmp/npm*
 RUN apt-get update \
     && apt-get install -y zip
-WORKDIR /usr/src/ghost/content/themes
-RUN wget -O theme.zip https://github.com/Archeb/Aqours/archive/master.zip \
-    && unzip theme.zip
+# WORKDIR /usr/src/ghost/content/themes
+# RUN git clone 粘贴你要添加的主题的github clone地址
 ENV GHOST_CONTENT /var/lib/ghost
 RUN mkdir -p "$GHOST_CONTENT" && chown -R user:user "$GHOST_CONTENT"
 VOLUME $GHOST_CONTENT
