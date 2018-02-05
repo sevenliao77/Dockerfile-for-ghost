@@ -11,7 +11,7 @@ config = {
     // When running Ghost in the wild, use the production environment.
     // Configure your URL and mail settings here
     production: {
-        url: 'https://hypermeteor.daoapp.io/',
+        url: 'www.se7enliao.club/',
         mail: {},
         database: {
             client: 'sqlite3',
